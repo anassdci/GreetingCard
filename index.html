@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body  >
+   <!-- <div class="bg">
+        <img src="assets/img/image3.jpg" alt="">
+    </div> -->
+    
+    <section class="section">
+        <aside class="box-top"> 
+              <img src="assets/img/image3.jpg" alt="">
+        </aside>
+        <aside class="box-buttom">
+            <h1>
+            Anass Nebbari
+            </h1>
+            <p> 
+             Projekt für Digital Careers Institut: <br>Micropage. <br> <br> 
+             Übung macht den Meister
+            </p>
+            <div  class="button">
+                    <button type="button"><a href="#" id="button">Click me</a> </button>
+                </div>
+        </aside>
+    </section>
+    <div class="bg1">
+        <div class="popup">
+            <div class="close">+</div>
+            <div class="text">
+                <p>Danke für die Gelegenheit,<br> die Sie mir gewähren.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('button').addEventListener('click',function(){
+    document.querySelector('.bg1').style.display = 'flex';
+});
+document.querySelector('.close').addEventListener('click',function(){
+    document.querySelector('.bg1').style.display = 'none';
+});
+document.getElementById('button').addEventListener('click',function(){
+    document.querySelector('.section').style.display = 'none';
+});
+document.querySelector('.close').addEventListener('click',function(){
+    document.querySelector('.section').style.display = 'grid';
+});
+
+
+</script>
+</html>
